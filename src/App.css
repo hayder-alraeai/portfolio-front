@@ -1,11 +1,177 @@
 .App {
-  text-align: center;
+  
 }
 
+
+.App-header {
+  background-color: #282c34;
+  padding: 0;
+}
+.container{
+  width: 70%;
+  margin: auto;
+  min-height: 5vh;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  font-size: calc(10px + 2vmin);
+  color: bisque;
+}
+.logo-title{
+  width: 50%;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+}
 .App-logo {
-  height: 40vmin;
+  height: 7vmin;
   pointer-events: none;
 }
+.logo-title{
+  font-size: 20pt;
+  pointer-events: none;
+  font-family: cursive;
+}
+.nav{
+  width: 50%;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-end;
+  justify-content: end;
+}
+.nav ul{
+  margin-right: 5vmin;
+}
+.nav ul li{
+  display: inline;
+  margin-left: 5vmin;
+  text-decoration: none;
+}
+.nav ul li a{
+  text-decoration: none;
+  color: bisque;
+  font-size: 13pt;
+}
+/* header ends here */
+
+/* body starts here */
+.body-container{
+  width: 70%;
+  margin: auto;
+  min-height: 5vh;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-items: center;
+  font-size: calc(10px + 2vmin);
+  color: bisque;
+}
+
+.body{
+  display: flex;
+  margin-top: 5vmin;
+  flex-direction: row;
+  align-items: center;
+  justify-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: rgb(122, 120, 116);
+}
+.body-left{
+  display: flex;
+  flex-direction: column;
+  flex: 3;
+  height: 900px;
+  background-color: #fff;
+  border-radius: 10px;
+  align-items: center;
+}
+.body-left .left-header{
+  height: 10vmin;
+  width: 100%;
+  border-radius: 10px 10px 0 0;
+  background-color: #282c34;
+  text-align: center;
+}
+.body-left .left-name{
+  color: bisque;
+  margin-top: 1vmin;
+  color: #1f1f1f;
+  width: 100%;
+  text-align: center;
+  padding-bottom: 3vmin;
+  border-bottom: 0.1px solid #ebebeb;
+}
+.body-left .profile-image{
+  width: 15vmin;
+  height: 15vmin;
+  margin-top: -3vmin;
+  border-radius: 50%;
+}
+.body-left .left-info{
+  margin-top: -3vmin;
+  align-self: flex-start;
+  border-bottom: 0.1px solid #ebebeb;
+  width: 100%;
+}
+.body-left .left-info ul li{
+  list-style: none;
+  color:#1f1f1f;
+  font-size: 13pt;
+  margin-bottom: 2vmin;
+}
+.body-center{
+  flex: 6;
+  height: 900px;
+  background-color: #fff;
+  margin: 0px 10px 0px 10px;
+  border-radius: 10px;
+}
+.body-right{
+  flex: 3;
+  height: 900px;
+  background-color: #fff;
+  border-radius: 10px;
+}
+
+/* body profile page ends here */
+
+/* register page begins here */
+.register-body form{
+  display: flex;
+  margin-top: 5vmin;
+  flex-direction: column;
+  align-items: center;
+  justify-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color:  #1f1f1f;
+  font-size: 15pt;
+}
+.register-body form .elements{ 
+  position: relative;
+  margin-bottom: 50px;
+  width: 30%;
+}
+.register-body>form .elements label{
+  position: absolute;
+  left: 0;
+}
+.register-body>form .elements input{
+  width: 50%;
+  position: absolute;
+  right: 0;
+}
+.register-body .register-logo{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin-top: 10vmin;
+}
+.register-body .register-logo img{
+  width: 30vmin;
+}
+/* register page ends here */
 
 @media (prefers-reduced-motion: no-preference) {
   .App-logo {
@@ -13,16 +179,6 @@
   }
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
 
 .App-link {
   color: #61dafb;
